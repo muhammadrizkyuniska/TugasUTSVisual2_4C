@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, Grids, DB, ADODB, StdCtrls, TeEngine, Series, ExtCtrls,
-  TeeProcs, Chart, DBGrids;
+  TeeProcs, Chart, DBGrids, frxClass, frxDBSet;
 
 type
   TForm7 = class(TForm)
@@ -19,10 +19,18 @@ type
     btn3: TButton;
     btn4: TButton;
     brsrsSeries1: TBarSeries;
+    frxdbdtst1: TfrxDBDataset;
+    frxrprt1: TfrxReport;
+    frxdbdtst2: TfrxDBDataset;
+    frxrprt2: TfrxReport;
+    qry2: TADOQuery;
     procedure btn1Click(Sender: TObject);
     procedure btn3Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure btn4Click(Sender: TObject);
+    procedure btn2Click(Sender: TObject);
+    procedure frxrprt1ClickObject(View: TfrxView; Button: TMouseButton;
+      Shift: TShiftState; var Modified: Boolean);
   private
     { Private declarations }
   public
@@ -99,6 +107,24 @@ end;
 procedure TForm7.btn4Click(Sender: TObject);
 begin
   Form9.ShowModal;
+end;
+
+procedure TForm7.btn2Click(Sender: TObject);
+begin
+  frxrprt1.ShowReport();
+end;
+
+procedure TForm7.frxrprt1ClickObject(View: TfrxView;
+  Button: TMouseButton; Shift: TShiftState; var Modified: Boolean);
+begin
+  if View.Name ='Memo7' then
+  begin
+    qry2.SQL.Clear;
+    qry2.SQL.Add('select * from jadwal_table where kelas="'+View.TagStr+'"');
+    qry2.Open;
+
+    frxrprt2.ShowReport();
+  end;
 end;
 
 end.
