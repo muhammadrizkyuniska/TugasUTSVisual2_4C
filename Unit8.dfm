@@ -1,9 +1,9 @@
-object Form6: TForm6
-  Left = 506
-  Top = 261
-  Width = 869
-  Height = 623
-  Caption = 'MENAMPILKAN DATA DI STRINGGRID DAN GRAFIK'
+object Form8: TForm8
+  Left = 454
+  Top = 231
+  Width = 872
+  Height = 607
+  Caption = 'GRAFIK REVISI'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,7 +11,6 @@ object Form6: TForm6
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
-  Position = poDesktopCenter
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
@@ -55,14 +54,13 @@ object Form6: TForm6
     ParentFont = False
   end
   object cbb1: TComboBox
-    Left = 199
-    Top = 31
+    Left = 198
+    Top = 32
     Width = 145
     Height = 21
     ItemHeight = 13
     TabOrder = 0
     Items.Strings = (
-      '2018'
       '2019'
       '2020'
       '2021'
@@ -84,11 +82,11 @@ object Form6: TForm6
     ItemHeight = 13
     TabOrder = 2
     Items.Strings = (
-      'TI'
-      'SI')
+      'Teknik Informatika'
+      'Sistem Informasi')
   end
   object btn1: TButton
-    Left = 50
+    Left = 51
     Top = 143
     Width = 104
     Height = 31
@@ -97,11 +95,11 @@ object Form6: TForm6
     OnClick = btn1Click
   end
   object btn2: TButton
-    Left = 238
-    Top = 141
-    Width = 102
+    Left = 196
+    Top = 142
+    Width = 79
     Height = 34
-    Caption = 'VIEW GRAFIK'
+    Caption = 'CLEAR'
     TabOrder = 4
     OnClick = btn2Click
   end
@@ -113,10 +111,10 @@ object Form6: TForm6
     TabOrder = 5
   end
   object cht1: TChart
-    Left = 50
-    Top = 196
-    Width = 759
-    Height = 347
+    Left = 51
+    Top = 184
+    Width = 758
+    Height = 349
     AllowPanning = pmNone
     AllowZoom = False
     BackWall.Brush.Color = clWhite
@@ -143,5 +141,14 @@ object Form6: TForm6
       PieValues.Multiplier = 1.000000000000000000
       PieValues.Order = loNone
     end
+  end
+  object btn3: TButton
+    Left = 281
+    Top = 144
+    Width = 79
+    Height = 34
+    Caption = 'CLEAR ALL'
+    TabOrder = 7
+    OnClick = btn3Click
   end
 end

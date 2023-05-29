@@ -23,6 +23,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure btn1Click(Sender: TObject);
     procedure BitBtn1Click(Sender: TObject);
+    procedure btn3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -38,6 +39,7 @@ implementation
 
 procedure TForm3.FormCreate(Sender: TObject);
 begin
+  cht1.Title.Text.Clear;
   strngrd1.ColCount:=2;
   strngrd1.Cells[0,0]:='JENIS PENYAKIT';
   strngrd1.Cells[0,1]:='COVID 19';
@@ -53,15 +55,20 @@ procedure TForm3.BitBtn1Click(Sender: TObject);
 var
   i : Integer;
 begin
-  for i := 1 to strngrd1.RowCount-1 do
+  for i:=1 to strngrd1.RowCount-1 do
   begin
-    cht1.Series[0].Add(StrToFloat(strngrd1.cells[1,i]),strngrd1.cells[0,i]);
+    cht1.Series[0].Add(StrToFloat(strngrd1.Cells[1,i]),strngrd1.cells[0,i]);
   end;
 end;
 
 procedure TForm3.btn1Click(Sender: TObject);
 begin
   strngrd1.Cells[1,cbb1.ItemIndex+1]:= edt1.Text;
+end;
+
+procedure TForm3.btn3Click(Sender: TObject);
+begin
+  Close;
 end;
 
 end.

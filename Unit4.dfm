@@ -1,9 +1,9 @@
 object Form4: TForm4
-  Left = 213
-  Top = 167
-  Width = 696
-  Height = 444
-  Caption = 'LATIHAN 1 KALKULATOR'
+  Left = 239
+  Top = 272
+  Width = 514
+  Height = 406
+  Caption = 'LATIHAN 2'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,8 +15,8 @@ object Form4: TForm4
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
-    Left = 125
-    Top = 59
+    Left = 41
+    Top = 52
     Width = 58
     Height = 16
     Caption = 'INPUTAN1'
@@ -28,8 +28,8 @@ object Form4: TForm4
     ParentFont = False
   end
   object lbl2: TLabel
-    Left = 126
-    Top = 90
+    Left = 42
+    Top = 83
     Width = 58
     Height = 16
     Caption = 'INPUTAN2'
@@ -41,8 +41,8 @@ object Form4: TForm4
     ParentFont = False
   end
   object edt1: TEdit
-    Left = 199
-    Top = 57
+    Left = 115
+    Top = 50
     Width = 121
     Height = 24
     Font.Charset = DEFAULT_CHARSET
@@ -54,8 +54,8 @@ object Form4: TForm4
     TabOrder = 0
   end
   object edt2: TEdit
-    Left = 199
-    Top = 88
+    Left = 115
+    Top = 81
     Width = 121
     Height = 24
     Font.Charset = DEFAULT_CHARSET
@@ -67,8 +67,8 @@ object Form4: TForm4
     TabOrder = 1
   end
   object btn1: TButton
-    Left = 376
-    Top = 53
+    Left = 292
+    Top = 46
     Width = 107
     Height = 50
     Caption = 'PROSES SEMUA'
@@ -82,8 +82,8 @@ object Form4: TForm4
     OnClick = btn1Click
   end
   object grp1: TGroupBox
-    Left = 125
-    Top = 129
+    Left = 41
+    Top = 120
     Width = 419
     Height = 179
     Caption = 'NILAI PROSES'
@@ -127,6 +127,7 @@ object Form4: TForm4
       Top = 20
       Width = 140
       Height = 24
+      ReadOnly = True
       TabOrder = 0
     end
     object edt4: TEdit
@@ -134,6 +135,7 @@ object Form4: TForm4
       Top = 51
       Width = 139
       Height = 24
+      ReadOnly = True
       TabOrder = 1
     end
     object edt5: TEdit
@@ -141,6 +143,7 @@ object Form4: TForm4
       Top = 84
       Width = 139
       Height = 24
+      ReadOnly = True
       TabOrder = 2
     end
     object edt6: TEdit
@@ -148,6 +151,7 @@ object Form4: TForm4
       Top = 117
       Width = 139
       Height = 24
+      ReadOnly = True
       TabOrder = 3
     end
     object btn2: TButton

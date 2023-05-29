@@ -38,6 +38,7 @@ type
     procedure btn3Click(Sender: TObject);
     procedure btn1Click(Sender: TObject);
     procedure btn2Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -103,20 +104,29 @@ end;
 
 procedure TForm5.btn2Click(Sender: TObject);
 begin
-  edt1.Text :='0';
-  edt2.Text :='0';
-  edt3.Text :='0';
-  edt4.Text :='0';
-  edt5.Text :='0';
-  edt6.Text :='0';
-  edt9.Text :='0';
-  edt10.Text :='0';
-  edt11.Text :='0';
-  edt12.Text :='0';
+  edt1.Text :='';
+  edt2.Text :='';
+  edt3.Text :='';
+  edt4.Text :='15';
+  edt5.Text :='25';
+  edt6.Text :='20';
+  edt9.Text :='';
+  edt10.Text :='';
+  edt11.Text :='10';
+  edt12.Text :='30';
   edt7.Text :='';
   edt8.Text :='';
   edt13.Text :='';
 
+end;
+
+procedure TForm5.FormCreate(Sender: TObject);
+begin
+  edt4.Text :='15';
+  edt5.Text :='25';
+  edt6.Text :='20';
+  edt11.Text :='10';
+  edt12.Text :='30';
 end;
 
 end.

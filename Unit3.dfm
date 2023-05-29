@@ -1,6 +1,6 @@
 object Form3: TForm3
-  Left = 237
-  Top = 295
+  Left = 268
+  Top = 200
   Width = 834
   Height = 436
   Caption = 'Grafik dan Stringgrid'
@@ -75,6 +75,8 @@ object Form3: TForm3
     BackWall.Brush.Color = clWhite
     BackWall.Brush.Style = bsClear
     BackWall.Pen.Visible = False
+    Title.Text.Strings = (
+      'TChart')
     AxisVisible = False
     ClipPoints = False
     Frame.Visible = False
@@ -118,6 +120,7 @@ object Form3: TForm3
     Width = 75
     Height = 25
     TabOrder = 6
+    OnClick = btn3Click
     Kind = bkClose
   end
 end

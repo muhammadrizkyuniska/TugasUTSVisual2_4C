@@ -21,15 +21,13 @@ type
     edt6: TEdit;
     edt7: TEdit;
     edt8: TEdit;
-    pnl1: TPanel;
-    pnl2: TPanel;
-    pnl3: TPanel;
     btn1: TButton;
     btn2: TButton;
     btn3: TButton;
     procedure btn3Click(Sender: TObject);
     procedure btn1Click(Sender: TObject);
     procedure btn2Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -94,6 +92,16 @@ begin
   edt6.Text :='0';
   edt7.Text :='';
   edt8.Text :='';
+end;
+
+procedure TForm2.FormCreate(Sender: TObject);
+begin
+  edt1.Text :='0';
+  edt2.Text :='0';
+  edt3.Text :='0';
+  edt4.Text :='0';
+  edt5.Text :='0';
+  edt6.Text :='0';
 end;
 
 end.

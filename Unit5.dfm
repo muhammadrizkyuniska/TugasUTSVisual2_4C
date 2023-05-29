@@ -1,9 +1,9 @@
 object Form5: TForm5
   Left = 192
   Top = 125
-  Width = 641
-  Height = 455
-  Caption = 'LATIHAN 2 KONDISIONAl'
+  Width = 412
+  Height = 495
+  Caption = 'LATIHAN 02 KONDISIONAl'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -12,11 +12,12 @@ object Form5: TForm5
   Font.Style = []
   OldCreateOrder = False
   Position = poDesktopCenter
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
     Left = 28
-    Top = 143
+    Top = 138
     Width = 114
     Height = 16
     Caption = 'NILAI KEHADIRAN'
@@ -29,7 +30,7 @@ object Form5: TForm5
   end
   object lbl2: TLabel
     Left = 28
-    Top = 177
+    Top = 167
     Width = 80
     Height = 16
     Caption = 'NILAI TUGAS'
@@ -42,7 +43,7 @@ object Form5: TForm5
   end
   object lbl3: TLabel
     Left = 29
-    Top = 210
+    Top = 201
     Width = 62
     Height = 16
     Caption = 'NILAI UTS'
@@ -54,8 +55,8 @@ object Form5: TForm5
     ParentFont = False
   end
   object lbl4: TLabel
-    Left = 384
-    Top = 140
+    Left = 30
+    Top = 339
     Width = 32
     Height = 16
     Caption = 'Total'
@@ -67,8 +68,8 @@ object Form5: TForm5
     ParentFont = False
   end
   object lbl5: TLabel
-    Left = 385
-    Top = 174
+    Left = 31
+    Top = 373
     Width = 38
     Height = 16
     Caption = 'Grade'
@@ -81,7 +82,7 @@ object Form5: TForm5
   end
   object lbl6: TLabel
     Left = 29
-    Top = 243
+    Top = 230
     Width = 90
     Height = 16
     Caption = 'NILAI HARIAN'
@@ -94,10 +95,10 @@ object Form5: TForm5
   end
   object lbl7: TLabel
     Left = 30
-    Top = 276
-    Width = 62
+    Top = 262
+    Width = 65
     Height = 16
-    Caption = 'NILAI UTS'
+    Caption = 'NILAI UAS'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -106,8 +107,8 @@ object Form5: TForm5
     ParentFont = False
   end
   object lbl8: TLabel
-    Left = 385
-    Top = 208
+    Left = 31
+    Top = 407
     Width = 26
     Height = 16
     Caption = 'Ket.'
@@ -133,7 +134,7 @@ object Form5: TForm5
   end
   object edt2: TEdit
     Left = 152
-    Top = 172
+    Top = 165
     Width = 121
     Height = 24
     Font.Charset = DEFAULT_CHARSET
@@ -146,7 +147,7 @@ object Form5: TForm5
   end
   object edt3: TEdit
     Left = 152
-    Top = 205
+    Top = 199
     Width = 121
     Height = 24
     Font.Charset = DEFAULT_CHARSET
@@ -163,43 +164,46 @@ object Form5: TForm5
     Width = 75
     Height = 24
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
+    Font.Color = clScrollBar
     Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
+    ReadOnly = True
     TabOrder = 3
   end
   object edt5: TEdit
     Left = 286
-    Top = 173
+    Top = 166
     Width = 75
     Height = 24
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
+    Font.Color = clScrollBar
     Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
+    ReadOnly = True
     TabOrder = 4
   end
   object edt6: TEdit
-    Left = 287
-    Top = 207
+    Left = 286
+    Top = 199
     Width = 75
     Height = 24
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
+    Font.Color = clScrollBar
     Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
+    ReadOnly = True
     TabOrder = 5
   end
   object edt7: TEdit
-    Left = 442
-    Top = 136
-    Width = 67
+    Left = 155
+    Top = 339
+    Width = 209
     Height = 24
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -210,9 +214,9 @@ object Form5: TForm5
     TabOrder = 8
   end
   object edt8: TEdit
-    Left = 441
-    Top = 173
-    Width = 67
+    Left = 154
+    Top = 376
+    Width = 209
     Height = 24
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -223,9 +227,9 @@ object Form5: TForm5
     TabOrder = 7
   end
   object pnl1: TPanel
-    Left = 11
+    Left = 3
     Top = 20
-    Width = 594
+    Width = 361
     Height = 52
     Caption = 'CEK NILAI BOBOT SISWA'
     Font.Charset = DEFAULT_CHARSET
@@ -265,10 +269,10 @@ object Form5: TForm5
     TabOrder = 14
   end
   object btn1: TButton
-    Left = 158
-    Top = 309
-    Width = 87
-    Height = 42
+    Left = 31
+    Top = 294
+    Width = 105
+    Height = 37
     Caption = 'Hitung'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -280,10 +284,10 @@ object Form5: TForm5
     OnClick = btn1Click
   end
   object btn2: TButton
-    Left = 275
-    Top = 308
-    Width = 88
-    Height = 44
+    Left = 145
+    Top = 294
+    Width = 105
+    Height = 37
     Caption = 'Hapus'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -295,10 +299,10 @@ object Form5: TForm5
     OnClick = btn2Click
   end
   object btn3: TButton
-    Left = 438
-    Top = 243
-    Width = 89
-    Height = 45
+    Left = 258
+    Top = 295
+    Width = 105
+    Height = 37
     Caption = 'Keluar'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -310,8 +314,8 @@ object Form5: TForm5
     OnClick = btn3Click
   end
   object edt9: TEdit
-    Left = 154
-    Top = 238
+    Left = 152
+    Top = 230
     Width = 120
     Height = 24
     Font.Charset = DEFAULT_CHARSET
@@ -323,8 +327,8 @@ object Form5: TForm5
     TabOrder = 6
   end
   object edt10: TEdit
-    Left = 153
-    Top = 272
+    Left = 152
+    Top = 262
     Width = 120
     Height = 24
     Font.Charset = DEFAULT_CHARSET
@@ -336,35 +340,37 @@ object Form5: TForm5
     TabOrder = 9
   end
   object edt11: TEdit
-    Left = 287
-    Top = 238
+    Left = 286
+    Top = 230
     Width = 75
     Height = 24
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
+    Font.Color = clScrollBar
     Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
+    ReadOnly = True
     TabOrder = 10
   end
   object edt12: TEdit
-    Left = 288
-    Top = 272
+    Left = 286
+    Top = 262
     Width = 75
     Height = 24
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
+    Font.Color = clScrollBar
     Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
+    ReadOnly = True
     TabOrder = 11
   end
   object edt13: TEdit
-    Left = 439
-    Top = 206
-    Width = 125
+    Left = 152
+    Top = 409
+    Width = 209
     Height = 24
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText

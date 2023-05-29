@@ -1,9 +1,9 @@
-object Form6: TForm6
-  Left = 506
-  Top = 261
-  Width = 869
-  Height = 623
-  Caption = 'MENAMPILKAN DATA DI STRINGGRID DAN GRAFIK'
+object Form10: TForm10
+  Left = 192
+  Top = 125
+  Width = 844
+  Height = 606
+  Caption = 'StringGrid dan Grafik Mahasiswa'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -18,9 +18,9 @@ object Form6: TForm6
   object lbl1: TLabel
     Left = 50
     Top = 37
-    Width = 107
+    Width = 22
     Height = 16
-    Caption = 'TAHUN ANGKATAN'
+    Caption = 'NIM'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -31,9 +31,9 @@ object Form6: TForm6
   object lbl2: TLabel
     Left = 51
     Top = 75
-    Width = 119
+    Width = 112
     Height = 16
-    Caption = 'JUMLAH TERDAFTAR'
+    Caption = 'NAMA MAHASISWA'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -44,9 +44,9 @@ object Form6: TForm6
   object lbl3: TLabel
     Left = 51
     Top = 112
-    Width = 60
+    Width = 107
     Height = 16
-    Caption = 'FAKULTAS'
+    Caption = 'TAHUN ANGKATAN'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -55,8 +55,8 @@ object Form6: TForm6
     ParentFont = False
   end
   object cbb1: TComboBox
-    Left = 199
-    Top = 31
+    Left = 198
+    Top = 112
     Width = 145
     Height = 21
     ItemHeight = 13
@@ -71,24 +71,13 @@ object Form6: TForm6
   end
   object edt1: TEdit
     Left = 198
-    Top = 71
+    Top = 37
     Width = 143
     Height = 21
     TabOrder = 1
   end
-  object cbb2: TComboBox
-    Left = 197
-    Top = 111
-    Width = 145
-    Height = 21
-    ItemHeight = 13
-    TabOrder = 2
-    Items.Strings = (
-      'TI'
-      'SI')
-  end
   object btn1: TButton
-    Left = 50
+    Left = 49
     Top = 143
     Width = 104
     Height = 31
@@ -143,5 +132,12 @@ object Form6: TForm6
       PieValues.Multiplier = 1.000000000000000000
       PieValues.Order = loNone
     end
+  end
+  object edt2: TEdit
+    Left = 198
+    Top = 72
+    Width = 143
+    Height = 21
+    TabOrder = 2
   end
 end
